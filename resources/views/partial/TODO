@@ -1,0 +1,670 @@
+ 
+
+
+
+MEMOIRE DE FIN D’ETUDE EN VUE DE L’OBTENTION DE LICENCE 
+
+Parcours : Informatique
+(Option :)
+(Promotion :)
+
+ 
+POJET : MULTIPLATEFORME WEB/MOBILE
+
+
+
+
+Impétrant(e) : MANOHITIANA Niaina Fitahiana
+Encadreur technique : 
+
+
+
+
+
+
+
+Année universitaire : 2023 2024
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+REMERCIEMENT :	
+
+	
+D’abord, il est important de remercier premièrement dieu, pour les moments, les bénédictions et tous les forces qu’il nous a offert pour qu’on se puissent vivre à présent. Ensuite je remercie aussi mes parents, mes amis, mes professeurs et tous ce qui m’a soutenu et ce qui m’a donné des motivations, des conseils et d’aide durant mes études.
+Tous mes remerciements vont également aux personnes suivantes :
+	Monsieur MIANDRISOA MANANTENA Junior Donna, Directeur Général de l’ESC-ESPIC
+	Madame SAHOLIARIVELO Rovatiana, Directeur Adjoint de JOYCE GROUP
+	Mon encadreur Jeremy ANDRIAMIRAHO
+	Tous les membres de jury ici présent durant ma mémoire, malgré les occupations ont accepté d’examiner et juger ma mémoire.
+	Tous mes collègues et camarade de classe qui m’ont accompagné au long de mes études.
+Je tiens aussi à remercier le corps professoral de l’institut ESC-ESPIC pour m’avoir formé et transmis leur connaissance.
+Un grand merci à tous ce que je n’ai pas pu nommer, mais qui ont aussi contribué au résultat de ce mémoire.
+
+
+
+
+
+
+
+AVANT PROPOS
+L’ESPIC : est un Ecole Supérieur Professionnel en Informatique et Commerce.
+Immédiatement opérationnels, tout en possédant des bases rationnelles leurs permettant d’intégrer aisément dans le monde professionnel sur la technologie de nos jours.
+
+L’ESPIC (Ecole Supérieure en Informatique et Commerce) a trois formations :
+•	La formation modulaire Certifiant
+•	La formation Continue du DTS
+•	La formation du Licence
+L’ESPIC offre un système de formation comportant un volet théorique de cours et de recherches et un volet pratique destiné à des études de cas, des enquêtes, un montage de plan d’actions ainsi qu’à des simulations.
+-Pour la licence, l’ESPIC dispense un cursus de formation s’étalant sur trois années universitaires (après l’obtention du diplôme de Baccalauréat)
+- Pour le DTS, l’ESPIC dote les apprenants :
+•	en L1, des fondamentaux en informatique avec des UE fondamentales, des UE complémentaires ;
+•	en L2, les UE dispensées sont des UE d’approfondissement programmées dans le parcours    « Informatique ».
+En L3, des UE optionnelles sont programmées pour favoriser le choix des étudiants en Semestre 5 l’ESPIC offre trois parcours :
+-	Informatique de Gestion
+-	Marketing Digitale et Numérique
+-	Management et Informatique
+
+L’ESPIC Dispose aussi de formation Professionnel spécialisant dans le domaine de :
+-	Développement WEB et Graphic Design
+-	Montage vidéo et Graphic Design
+
+L’ESPIC offre une formation académique mais à vocation professionnalisant comportant deux volets :
+- Un volet de cours et de séminaires
+- Un volet pratique par imprégnation dans le monde professionnel : enquête sur le terrain suivant les besoins des unités d’enseignement, participation à des conférences données par des experts, des consultants, des directeurs généraux d’entreprises. Ce volet doit refléter les travaux personnels de l’étudiant qui consistent en des recherches documentaires dans les bibliothèques ou en ligne) et qui doivent se traduire en exposé, en compte-rendu, en rapports (que ce soit écrit ou oral)
+Ces deux volets doivent s’articuler autour d’un dispositif de méthodologies :
+- Méthodologie du travail universitaire dès l’entrée en L1
+- Méthodologie de recherche documentaire pour aider l’apprenant à entreprendre des travaux personnels.
+- Méthodologie de rédaction de rapports pour favoriser l’intégration professionnelle en L3
+Durant la formation, nous avons suivi des enseignements théoriques et pratiques de notre domaine et avons  participé aux examens de l’ESPIC  pour atteindre nos connaissances. Le tout a été renforcé  par des recherches et visite d’entreprise. Durant notre réalisation de ce travail, nous avons pu approfondir notre connaissance par l’intermédiaire des collectes d’informations concernant la « PARCOURS », mais aussi savoir mieux dans le monde de l’informatique.
+A la fin de la formation, je présente cette mémoire de fin à partie duquel nous avons effectué des recherches, sur le thème intitulé : « THEME».
+Au terme de ce travail, nous essayons de trouver et d’aborder des accommodations pour la problématique de ce travail.
+
+
+
+
+
+
+
+
+
+ABREVIATION 
+CV Curriculum Vitae 
+CSS Cascading Style Sheets 
+HQL Hibernate Query Langage 
+HTML HyperText Markup Langage 
+HTTP HypertText Tranfer Protocol 
+HTTPS HypertText Tranfer Protocol Secure 
+IDE Integrated Development Environment 
+IP Internet Protocol 
+JS JavaScript 
+MCD Modèle Conceptuel des Données 
+MERISE Méthode d’Etude et de Réalisation Informatique pour les Systèmes d’Entreprise 
+MLD Modèle Logique des Données 
+MPD Modèle Physique des Données 
+MVC Modèle-Vue-Contrôleur 
+ORM Object – Relationnel Mapping 
+PHP Hypertext PreProcesseur 
+SASS Syntactically Awesome Style Sheets 
+SGBD Système de Gestion de Base de Données 
+SGBDR Système de Gestion de Base de Données Relationnelle 
+SQL Structured Query Langage 
+TCP Transport Control Protocol 
+URL Uniform Resource Locator 
+VS Code Visual Studio Code 
+WampServer Windows, Apache, MySQL (MariaDB), PHP Server vi
+W3C World Wide Web Consortium 
+WWW World Wide Web
+
+
+
+
+
+INTRODUCTION :
+
+
+	Il y a cinquante ans, le traitement automatique de l'information, que nous appelons aujourd'hui l'informatique, a été découvert, marquant ainsi le début d'une ère de transformation technologique sans précédent. Depuis lors, nous assistons quotidiennement à des évolutions rapides et constantes dans le domaine des technologies, avec l'apparition de nouvelles innovations et d'outils modernes qui transforment notre manière de vivre, de travailler, et même de penser.
+Ces avancées technologiques ne se contentent pas de bouleverser les pratiques existantes ; elles suscitent également une multitude de nouvelles idées et opportunités. Elles stimulent la créativité et incitent à l'invention, au renouvellement de projets, et à la projection vers un avenir où la technologie occupe une place centrale. Dans ce contexte, se tenir à l'écart de la révolution numérique, ou l'ignorer, conduit inévitablement à un retard, voire à une défaillance. La digitalisation, en effet, offre une multitude d'avantages, que ce soit dans l'amélioration de l'efficacité, de l'accessibilité, ou de l'innovation dans des secteurs aussi divers que variés.
+À Madagascar, cependant, il reste des domaines où la digitalisation n'a pas encore pleinement déployé son potentiel. Parmi ceux-ci, le secteur des transports publics se distingue par un manque de modernisation numérique. C'est face à ce constat que nous avons été motivés à entreprendre ce projet de mémoire, intitulé « Zoto-Madagascar ». Ce projet vise à créer une multiplateforme web et mobile, conçue spécifiquement pour les compagnies routières et leurs utilisateurs, afin de faciliter la gestion et l'accès aux services de transport.
+Pour offrir une analyse rigoureuse et structurée, notre travail s'articule autour de trois grandes parties. Dans la première partie, nous présenterons les généralités relatives au projet, en posant les bases nécessaires à sa compréhension. La deuxième partie sera dédiée à l'analyse marketing, où nous examinerons les besoins, les opportunités, et les défis du marché. Enfin, la troisième et dernière partie traitera de la conception et de la réalisation du projet, où nous décrirons en détail les étapes de développement et les solutions mises en œuvre pour concrétiser notre vision.
+
+
+Partie 1 : Généralités du Projet
+I.	Présentation du projet
+•	La multi-plateforme Web/ Mobile,
+a.	Définition
+ C’est un système ou une application conçue pour être accessible et utilisable à la fois sur des ordinateurs, des téléphones mobiles, et des tablettes. Cela signifie qu'une personne peut interagir avec le même service, comme un site internet ou une application, quel que soit l'appareil qu'elle utilise. Par exemple, que l'on soit chez soi devant un ordinateur ou en déplacement avec un smartphone, on peut accéder aux mêmes informations, effectuer les mêmes actions, et profiter des mêmes services, sans aucune interruption ni différence notable dans l'expérience.
+L'idée derrière une multiplateforme web et mobile est de rendre les services numériques plus pratiques et accessibles pour tout le monde, peu importe l'appareil à disposition. Cela permet de répondre aux besoins des utilisateurs dans différentes situations de la vie quotidienne, en leur offrant la flexibilité d'accéder aux informations et de réaliser des tâches importantes, qu'ils soient au bureau, à la maison ou en déplacement.
+b.	Objectifs
+L'un des principaux objectifs d'une telle solution est de garantir une accessibilité optimale aux utilisateurs, quel que soit le type d'appareil qu'ils utilisent. En créant une application ou un site internet qui fonctionne aussi bien sur un ordinateur que sur un smartphone ou une tablette, on s'efforce d'assurer que chacun puisse accéder aux services ou informations de manière fluide et continue, sans être limité par le dispositif à sa disposition. Cette approche favorise l'inclusivité, permettant à un plus grand nombre de personnes d'interagir avec la plateforme, indépendamment de leur équipement technologique.
+Un autre objectif clé est de fournir une expérience utilisateur cohérente et harmonieuse sur toutes les plateformes. Les utilisateurs devraient retrouver les mêmes fonctionnalités, la même présentation, et une navigation intuitive, qu'ils se connectent depuis un ordinateur ou un appareil mobile. Cette cohérence est essentielle pour renforcer leur fidélité, car elle élimine les frustrations liées aux différences de fonctionnement entre les versions web et mobile d'une même application. En somme, cela contribue à améliorer la satisfaction et l'engagement des utilisateurs.
+c.	Avantages d’en avoir :
+Les avantages sont nombreux, notamment la possibilité de toucher un public plus large. Puisque l'accès est possible depuis divers appareils, l'application ou le service peut atteindre un plus grand nombre de personnes, augmentant ainsi sa visibilité et son impact. Cette polyvalence peut également se traduire par une augmentation des opportunités commerciales, en répondant aux besoins des clients dans différentes situations, que ce soit au travail, en déplacement ou à domicile.
+Enfin, il y a un gain en termes de coûts et d'efficacité. Plutôt que de développer et de maintenir des versions distinctes pour chaque type d'appareil, une seule solution est créée et adaptée pour fonctionner sur plusieurs plateformes. Cela réduit les coûts de développement et de maintenance, tout en simplifiant les mises à jour et les améliorations futures. Cette centralisation des efforts permet de consacrer plus de ressources à l'optimisation de l'expérience utilisateur et à l'ajout de nouvelles fonctionnalités, plutôt qu'à la gestion de multiples versions du produit.
+d.	Fonctionnement :
+Une solution multiplateforme permet aux utilisateurs de profiter des mêmes services, peu importe l'appareil qu'ils utilisent. Que l'on soit sur un ordinateur au bureau, sur un smartphone en déplacement, ou sur une tablette à la maison, les fonctionnalités et l'apparence restent les mêmes. Cela signifie que l'on peut commencer une tâche sur un appareil et la continuer sur un autre sans aucune interruption. Par exemple, on peut réserver un billet de bus depuis un téléphone, puis retrouver les détails de la réservation sur un ordinateur sans aucun problème.
+La flexibilité est un autre aspect important. Cette approche permet de s'adapter aux habitudes et aux besoins de chacun. Certains préfèrent utiliser leur ordinateur pour travailler, tandis que d'autres trouvent plus pratique d'utiliser leur téléphone lorsqu'ils sont en déplacement. La multiplateforme répond à ces différents usages en garantissant que chaque utilisateur bénéficie d'une expérience fluide et cohérente, quel que soit le support utilisé. Cela rend la technologie plus accessible et plus facile à intégrer dans la vie quotidienne.
+Ensuite, la simplicité de la mise à jour et de la maintenance est un avantage considérable. Lorsque des améliorations ou des correctifs sont nécessaires, ils peuvent être appliqués simultanément sur toutes les versions de la plateforme. Cela signifie qu'il n'est pas nécessaire de faire des ajustements séparés pour chaque type d'appareil, ce qui permet de gagner du temps et de réduire les risques d'erreurs. Pour les utilisateurs, cela garantit une expérience toujours à jour, avec les dernières fonctionnalités et une sécurité renforcée.
+Enfin, la capacité à offrir une continuité de service est cruciale. En cas de panne ou de problème sur un appareil, on peut facilement passer à un autre sans perdre ses données ni interrompre son travail. Cette continuité rassure les utilisateurs et leur permet de rester productifs, même en cas d'imprévus. C'est une fonctionnalité particulièrement utile pour ceux qui dépendent de la technologie dans leur quotidien, que ce soit pour le travail ou pour des activités personnelles.
+•	Le transport à Madagascar
+a.	Histoire
+Jusqu'au début du XXe siècle, le portage représentait presque l'unique moyen de transport à Madagascar, aussi bien pour les marchandises que pour les personnes. Les marchandises étaient transportées par des porteurs utilisant des balanciers, tandis que les personnes étaient transportées sur des chaises à porteurs, une pratique qui s'est poursuivie durant la période coloniale. Pour les voyageurs débarquant à Tamatave à cette époque, la première préoccupation était de recruter des porteurs pour rejoindre Tananarive. Ce périple à travers la brousse dense de Madagascar, encore largement inexplorée et verdoyante, nécessitait environ deux semaines de marche. Pour transporter une personne en filanzane (un type de chaise à porteurs), il fallait trois équipes de quatre porteurs, en plus des porteurs de bagages. En somme, un voyageur devait s'entourer de vingt à trente porteurs pour atteindre les Hautes Terres centrales.
+L'introduction du cheval à Madagascar, grâce à un don diplomatique au roi, était destinée exclusivement à la royauté et à sa cavalerie. Ce corps royal put ainsi se rendre à Tamatave en 1827, marquant une avancée notable dans les moyens de déplacement réservés à l'élite.
+Avec l'abolition de l'esclavage en septembre 1896 et surtout grâce à la construction de routes, le portage disparut progressivement sur les grands axes de l'île. Le pousse-pousse fit alors son apparition et devint un mode de transport populaire, bientôt suivi par l'introduction de la première automobile par le général Gallieni avant 1902. En 1909, le gouverneur Augagneur inaugura le premier tronçon de la ligne ferroviaire Tananarive-Côte Est (TCE), reliant Antananarivo à la côte Est. Les premiers avions firent leur apparition dans le ciel malgache en 1911, et en 1913, le dernier tronçon de la ligne TCE entra en service, marquant un tournant dans les infrastructures de transport sur l'île.
+Malgré les progrès réalisés en matière de transport à la fin du XIXe et au début du XXe siècle, ces avancées se concentrèrent principalement sur les grands axes. Dès que l'on s'aventurait au-delà de ces routes principales, le paysage des modes de transport restait inchangé, à l'exception des chars à zébus qui gagnèrent en popularité, surtout en raison de l'état précaire des pistes. Ce contraste confère à Madagascar une image authentique, mais au prix du développement économique. Les conditions de travail des porteurs et des tireurs de pousse-pousse demeurèrent extrêmement difficiles, n'ayant guère évolué malgré les transformations apparentes des infrastructures de transport.
+b.	Problèmes
+Malgré les avancées récentes en matière de transport à Madagascar, le secteur demeure confronté à de nombreux défis, notamment l'inefficacité des infrastructures et la disparité des systèmes de gestion des compagnies routières. La création d'une plateforme multiplateforme Web/Mobile visant à intégrer les services des compagnies routières et à répondre aux besoins des clients pose une problématique complexe. En effet, il est crucial de concevoir une solution qui puisse harmoniser les différents systèmes de gestion existants tout en offrant une expérience utilisateur fluide et adaptée aux réalités locales.
+Le premier défi réside dans l'intégration des services des compagnies routières dans une plateforme unique. Actuellement, ces compagnies utilisent divers systèmes pour gérer leurs opérations, tels que les réservations, les horaires, et la communication avec les clients. La centralisation de ces services dans une seule plateforme nécessite une solution technique capable de concilier ces systèmes disparates tout en assurant la fluidité des opérations et la précision des données.
+En parallèle, la diversité des besoins des utilisateurs pose un autre défi. Les clients, qu'ils soient dans des zones urbaines ou rurales, ont des attentes variées en termes de fonctionnalités, d'accessibilité, et de facilité d'utilisation. La plateforme doit être conçue de manière à répondre à ces besoins divers, tout en garantissant une expérience utilisateur cohérente sur différents types d'appareils, que ce soit des ordinateurs, des smartphones, ou des tablettes.
+De plus, la situation actuelle des infrastructures de transport à Madagascar complique encore davantage la mise en œuvre de cette plateforme. La gestion des trajets, la disponibilité des informations en temps réel, et l'adaptation aux conditions variées des routes sont autant de défis que la plateforme devra relever. La capacité à fournir des informations fiables et actualisées sur les trajets et les services de transport est essentielle pour répondre aux attentes des utilisateurs et optimiser les opérations des compagnies routières.
+•	Zoto-Madagascar
+a.	Définition :
+"Zoto-Madagascar" est une plateforme numérique innovante, disponible à la fois sur le web et sur mobile, dédiée à la modernisation du secteur du transport à Madagascar. Ce projet vise à offrir une solution intégrée qui permet aux compagnies routières de publier et de gérer leurs services de manière centralisée. Grâce à "Zoto-Madagascar", ces entreprises peuvent présenter une gamme variée de services, tels que les types de voyages disponibles, les options de location de véhicules, et les services de livraison de colis.
+La plateforme se distingue par son accessibilité sur divers dispositifs, incluant les ordinateurs, les smartphones, et les tablettes. Elle permet aux utilisateurs d'explorer, de comparer, et de réserver facilement des services de transport en un seul lieu. En centralisant ces informations, "Zoto-Madagascar" améliore la transparence et la commodité pour les clients, tout en offrant aux compagnies routières une gestion simplifiée et efficace de leurs offres. Cette approche vise à optimiser le secteur du transport malgache en facilitant l'accès aux services et en favorisant une meilleure interaction entre les prestataires et les utilisateurs.
+b.	Avantages d’en avoir 
+Adopter "Zoto-Madagascar" nous apporte plusieurs avantages notables pour le secteur du transport à Madagascar. En centralisant nos services de transport sur une seule plateforme accessible à la fois sur le web et sur mobile, nous simplifions l'accès aux informations pour nos clients et améliorons leur expérience utilisateur. Les voyageurs peuvent facilement explorer et comparer les différentes options de voyage, réserver des véhicules, et organiser l'envoi de colis sans avoir à naviguer entre plusieurs systèmes ou plateformes. Cette centralisation nous permet également de gérer nos offres de manière plus efficace, réduisant ainsi la complexité opérationnelle et les erreurs liées à la gestion manuelle des réservations et des informations.
+De plus, "Zoto-Madagascar" nous offre une meilleure visibilité, augmentant ainsi notre portée et notre capacité à attirer de nouveaux clients. En facilitant la diffusion des informations sur nos services, nous pouvons gérer plus efficacement nos interactions avec les utilisateurs. Cela peut entraîner une augmentation des réservations et des transactions, stimulant ainsi la croissance du secteur. L'intégration de fonctionnalités modernes telles que la réservation en ligne et le suivi des colis nous aide à répondre mieux aux attentes croissantes des clients en matière de commodité et de transparence.
+
+c.	Fonctionnement
+"Zoto-Madagascar" fonctionne comme une plateforme intégrée qui permet aux compagnies routières de publier et de gérer leurs services de transport en ligne. Les compagnies peuvent créer des profils détaillés pour leurs offres, incluant des informations sur les types de voyages proposés, les options de location de véhicules, et les services de livraison de colis. Les utilisateurs accèdent à ces informations via l'interface web, où ils peuvent explorer les différentes options, comparer les prix, et effectuer des réservations directement en ligne. La plateforme permet également aux compagnies de mettre à jour leurs offres en temps réel et de gérer les réservations et les demandes de manière centralisée.
+Pour les utilisateurs, la version mobile de "Zoto-Madagascar" est spécialement dédiée à la réservation et à la commande de services. Grâce à l'application mobile, les utilisateurs peuvent facilement rechercher des voyages, réserver des véhicules ou organiser l'envoi de colis depuis leurs smartphones. L'application fournit des fonctionnalités telles que le suivi des trajets en temps réel et les confirmations de réservation instantanées, garantissant une gestion fluide et pratique des services de transport. En centralisant ces processus sur une plateforme unique, "Zoto-Madagascar" optimise l'efficacité opérationnelle et améliore la satisfaction des utilisateurs en offrant une solution moderne et accessible pour leurs besoins de transport.
+ 
+
+II.	 Étude de la faisabilité technique
+L'étude de faisabilité technique pour le projet "Zoto-Madagascar" a été cruciale pour guider sa réalisation. Cette plateforme, désormais opérationnelle, répond aux exigences du secteur du transport à Madagascar en offrant une solution web et mobile adaptée. Ce chapitre revient sur les analyses et décisions qui ont permis d'assurer la réussite du projet, en se concentrant sur l'analyse des besoins, les choix techniques, et l'allocation des ressources.
+Section 1 : Analyse des besoins du client
+1.1 Besoins fonctionnels
+Lors de la conception de "Zoto-Madagascar," il était essentiel d'identifier les fonctionnalités clés pour répondre aux attentes des utilisateurs, à savoir les transporteurs et les clients. Les fonctionnalités principales développées incluent :
+•	Gestion des réservations et commandes : La plateforme permet aux utilisateurs de réserver des trajets, de commander des services de transport, et de gérer leurs réservations facilement.
+•	Enregistrement des utilisateurs : Les clients et transporteurs peuvent s'inscrire rapidement, avec une gestion sécurisée de leurs données personnelles.
+•	Mise à jour des informations : Les utilisateurs peuvent modifier leurs informations personnelles et de réservation en temps réel.
+•	Suivi des trajets : Les clients peuvent suivre leurs trajets en direct, avec des notifications sur l'état du service.
+1.2 Authentification et accès
+Pour garantir la sécurité des utilisateurs et des données sensibles, plusieurs mesures ont été mises en place :
+•	Authentification à deux facteurs : Ce mécanisme renforce la sécurité en exigeant une vérification supplémentaire pour accéder à l'application.
+•	Gestion des rôles : Les utilisateurs ont des niveaux d'accès spécifiques selon leur rôle (administrateurs, transporteurs, clients), avec des permissions adaptées.
+•	Confidentialité des données : Toutes les informations sont protégées par des protocoles de cryptage avancés, garantissant la confidentialité des utilisateurs.
+1.3 Utilisation des données
+La gestion efficace des données était essentielle pour offrir une expérience utilisateur optimisée :
+•	Stockage sécurisé des données : Les données des utilisateurs sont stockées de manière sécurisée, avec des sauvegardes régulières pour prévenir les pertes.
+•	Analyse des données : Des outils d'analyse sont intégrés pour mieux comprendre les comportements des utilisateurs et adapter les services offerts.
+Section 2 : Besoins non fonctionnels
+La plateforme "Zoto-Madagascar" a été conçue pour répondre aux exigences de performance, de sécurité, et d'ergonomie, essentielles pour une expérience utilisateur réussie.
+2.1 Fiabilité
+Pour assurer une disponibilité continue du service :
+•	Tolérance aux pannes : La plateforme est conçue pour gérer les interruptions sans impact majeur sur les utilisateurs, grâce à des mécanismes de redondance.
+•	Sauvegarde des données : Les données critiques sont sauvegardées régulièrement pour éviter toute perte en cas de défaillance.
+2.2 Facilité d'utilisation
+L'expérience utilisateur a été une priorité dans la conception de l'interface :
+•	Interface utilisateur (UI) intuitive : Les menus et options sont clairement présentés, facilitant l'utilisation pour tous les types d'utilisateurs.
+•	Accessibilité : La plateforme est accessible à tous, y compris aux personnes ayant des besoins spécifiques, grâce à des options d'accessibilité intégrées.
+2.3 Rendement et efficacité
+Les performances de la plateforme ont été optimisées pour le contexte technique spécifique de Madagascar :
+•	Optimisation pour les connexions lentes : La plateforme fonctionne efficacement même avec des connexions Internet limitées, ce qui est fréquent dans certaines régions.
+•	Scalabilité : La plateforme a été conçue pour évoluer avec le nombre croissant d'utilisateurs et de transactions.
+Section 3 : Étude des ressources
+3.1 Ressources matérielles
+Les ressources matérielles nécessaires à la réalisation de "Zoto-Madagascar" ont été identifiées et allouées avec soin :
+•	Serveurs sécurisés : Des serveurs robustes et sécurisés hébergent la plateforme, garantissant un service continu.
+•	Équipements de développement : Les développeurs ont utilisé des équipements informatiques performants et des outils logiciels adaptés pour le développement et la maintenance de la plateforme.
+•	Connexion Internet fiable : Une connexion Internet stable était indispensable pour le bon fonctionnement de la plateforme.
+3.2 Ressources humaines
+La réalisation de "Zoto-Madagascar" a mobilisé des compétences variées :
+•	Développeurs web et mobile : Une équipe de développeurs a travaillé sur les aspects web et mobile de la plateforme, en utilisant Laravel et React Native.
+•	Administrateurs système : Des experts en administration système ont assuré la gestion des serveurs et de la sécurité.
+•	Support client : Une équipe de support est disponible pour assister les utilisateurs et résoudre les problèmes rencontrés.
+
+
+Conclusion :
+L'étude de faisabilité technique a démontré que le projet "Zoto-Madagascar" était non seulement réalisable, mais aussi bien aligné avec les besoins du marché du transport à Madagascar. Les choix techniques et les ressources allouées ont permis de développer une plateforme robuste, sécurisée, et adaptée aux réalités locales, assurant ainsi son succès auprès des utilisateurs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chapitre 3 : Analyse du marché de Zoto Madagascar
+Introduction
+Zoto Madagascar est une plateforme multiplateforme web et mobile dédiée au transport à Madagascar. Cette analyse de marché vise à identifier les forces, les faiblesses, les opportunités, et les menaces (SWOT) associées au marché du transport à Madagascar, en mettant l'accent sur les abonnements aux articles publiés par les transporteurs, qui constituent la principale source de revenus pour l'entreprise.
+1. Analyse de la Demande
+1.1. Segmentation du Marché
+Pour développer la plateforme de transport à Madagascar, il est crucial de segmenter la demande en fonction des caractéristiques spécifiques des consommateurs locaux.
+Type de Segmentation	Critères	Description
+Géographique	Régions cibles	Principales villes : Antananarivo, Toamasina, Fianarantsoa. Ces régions concentrent une forte demande en raison de leur densité démographique et de l'activité économique.
+Socio-économique	Niveau de revenu	Classes moyennes et supérieures qui ont un revenu suffisant pour payer des services de transport réguliers, la location de voitures, ou l'envoi de colis.
+Comportemental	Habitudes d'utilisation	Jeunes professionnels et étudiants qui utilisent régulièrement les technologies numériques pour planifier leurs déplacements et réserver des services en ligne.
+Psychographique	Attitudes envers les services en ligne	Utilisateurs déjà habitués à effectuer des transactions en ligne, plus enclins à adopter une nouvelle plateforme de transport.
+1.2. Besoins et Attentes des Clients
+Type de Besoin	Description	Exemple de Service Attendu
+Voyage	Fiabilité et accessibilité des services de transport interurbain	Services de transport interurbain avec options de confort variées, du standard au premium.
+Location de voitures	Flexibilité pour besoins personnels/professionnels	Location de voitures à la demande pour des trajets courts ou des voyages d'affaires.
+Services de colis	Rapidité et sécurité pour les livraisons, surtout dans les zones rurales	Services de livraison avec suivi en temps réel et options de livraison rapide dans les régions éloignées.
+2. Étude de l’Offre
+2.1. Nature et Structure de l’Offre
+Le marché malgache du transport est dominé par des opérateurs traditionnels, souvent limités en termes de digitalisation et d'accessibilité en ligne.
+Type de Service	Acteurs Principaux	Caractéristiques
+Transport routier	Compagnies interurbaines	Réservations en personne, faible adoption de la digitalisation, services limités en ligne.
+Location de voitures	Agences locales/internationales	Processus de réservation manuels nécessitant un contact direct avec l'agence.
+Services de colis	Entreprises de transport	Couverture géographique inégale, délais de livraison souvent longs, coûts élevés.
+2.2. Opportunités de Différenciation
+Zoto Madagascar peut se différencier de la concurrence par :
+Axe de Différenciation	Opportunité	Exemple de Mise en Œuvre
+Digitalisation des services	Simplification des réservations et abonnements en ligne	Plateforme intuitive avec options de paiement intégrées et notifications en temps réel.
+Offres flexibles	Personnalisation des services pour attirer une clientèle plus large	Réductions pour réservations anticipées, abonnements groupés, programmes de fidélité.
+Couverture nationale	Expansion des services dans les régions éloignées	Services de livraison de colis dans les zones rurales avec une couverture plus étendue.
+3. Analyse des Abonnements aux Articles
+L'abonnement aux articles publiés par les transporteurs est le pilier financier de Zoto Madagascar. Une analyse approfondie s'impose pour maximiser les revenus issus de cette source.
+3.1. Modèle de Revenus
+Critères	Description	Opportunités d'Amélioration
+Tarification	Structure d'abonnement mensuelle ou annuelle	Introduire des options de paiement flexible, comme le pay-as-you-go pour attirer plus d'abonnés.
+Segmentation des Abonnés	Abonnés réguliers, occasionnels, et nouveaux	Offrir des réductions pour les abonnés longue durée, mettre en place des programmes de fidélité pour améliorer la rétention.
+Contenu Premium	Articles exclusifs pour abonnés payants	Augmenter la fréquence de publication d'articles exclusifs et offrir des services supplémentaires aux abonnés.
+Stratégies de Rétention	Taux de renouvellement des abonnements	Mise en place de rappels automatiques pour le renouvellement, proposer des offres spéciales pour les renouvellements anticipés.
+4. Politique Commerciale des Concurrents
+Les concurrents actuels de Zoto Madagascar utilisent principalement des stratégies de prix statiques et se limitent aux canaux traditionnels de marketing.
+Concurrents	Politique de Prix	Stratégie de Promotion
+Opérateurs traditionnels	Prix fixes avec peu de variation saisonnière	Marketing via des canaux traditionnels tels que la radio et les panneaux d'affichage.
+Zoto Madagascar	Tarification dynamique et flexible	Stratégie de marketing digital utilisant les réseaux sociaux, le référencement, et des campagnes ciblées en ligne.
+5. Stratégie Marketing de Zoto Madagascar
+5.1. Stratégie de Prix
+•	Tarification Dynamique : Adopter une politique de tarification qui s'ajuste en fonction de la demande saisonnière et des pics d'utilisation pour maximiser les revenus.
+•	Offres Promotionnelles : Lancer des promotions ciblées pour attirer de nouveaux abonnés, par exemple des réductions pour les premiers mois d'abonnement ou des offres groupées.
+5.2. Stratégie de Distribution
+•	Plateforme Multiplateforme : Assurer une disponibilité et une accessibilité de la plateforme sur tous les appareils, y compris les smartphones et les ordinateurs.
+•	Couverture Géographique : Étendre les services à l'ensemble du territoire malgache, avec un focus sur les zones rurales où la concurrence est moindre.
+5.3. Stratégie de Communication
+•	Marketing Digital : Utiliser les médias sociaux, le SEO, et les publicités en ligne pour atteindre une large audience. Mettre en avant les témoignages d'utilisateurs satisfaits pour renforcer la crédibilité.
+•	Campagnes de Sensibilisation : Organiser des événements et des campagnes de sensibilisation pour encourager l'adoption de la plateforme dans les zones où la digitalisation est encore faible.
+5.4	Marketing MIX
+La marketing MIX est un ensemble de décisions stratégiques prises par une entreprise pour positionner son produit ou service sur le marché. Dans le face site web touristique, le marketing MIX doit être adaptée aux besoins spécifiques du marché et des clients, et être régulièrement réévaluée et modifiée pour assurer la réussite de l’entreprise.
+
+Le marketing MIX est composé de quatre variable différentes appelées 4P qui constituent les principaux fondamentaux de la stratégie marketing.
+Ces 4 variable sont les suivants :
+•	Produit
+•	Prix
+•	Place 
+•	Promotion
+Chaque variable est constituée de plusieurs étapes afin promouvoir la stratégie marketing.
+Produit : ceci représente le service offert par le développeur c’est-à-dire le site web en question. Un produit est représenté par les points ci-dessus
+	 Concept produit
+	Caractéristiques intrinsèques
+	Le design
+	La marque
+	Le packaging
+	La politique de qualité
+	La gamme
+	Les services associés à l’offre
+Prix : il constitue l’élaboration de stratégie à mettre en place afin de planifier la politique de prix d’un produit. Ce politique se base sur les faits suivant :
+	Prix de lancement
+	Conditions de vente
+Place : elle consiste à recherche et trouver des circuits de distribution pour vendre son produit.
+Promotion : c’est une politique qui consiste à attirer l’attention des consommateurs pour but de faire connaitre son produit.
+5.4	Marketing MIX du site
+Produit : il est caractérisé par les différents trais ci-dessous
+Caractéristique : les différents techniques essentiels utilisées pour concevoir, mettre en valeur et commercialiser les services ou produit liés au tourisme. Ces aspects sont fondamentaux pour création d’une offre attractive et pertinente dans le domaine marketing
+Design : la qualité de l’image dans la plateforme suit les normes nécessaires
+Politique de qualité :se concentre sur l’importance de répondre aux besoins des clients manière efficace. Il ne suffit plus de se concentrer uniquement sur produit, son prix et sa commercialisation.
+Prix : la politique du prix de la plateforme vraie selon le cas de visiteur touristique 
+Abonnement mensuel : ces prix d’abonnement de la plateforme touristique sur le divers facteur, notamment la taille de l’entreprise, la demande de réservation et le service, l’abonnement de plateforme mensuel est : 150000AR 
+Abonnement annuel : l’entreprise et les autre facteur abonnement sur la plateforme de touristique, l’abonnement de plateforme touristique par ans est : 720000AR
+Abonnement trimestriel : l’abonnement de cette plateforme par trimestriel est : 180000AR.
+
+a)	Tableau de charge :
+Charge	cout
+Hébergement
+Prix de connexion internet
+Electricité	218000AR
+30000AR
+10000 AR
+Total	158000 AR 
+
+Tableau 7:Tableau de charge
+Place : la place d’une plateforme touristique est cruciale pour la promotion des produits touristique. Il joue un  essentiel dans la stratégie marketing d’une entreprise touristique en contribuant à la promotion des destinations, des services, et des expériences offertes aux voyageurs. La place du marketing mix, qui concerne la distribution du produit touristique et son accessibilité aux consommateur.
+Promotion : il consente la principalement sur trois méthode efficaces : publicité, la promotion des ventes et le bouche-à-oreille. Ces méthodes sont essentielles pour attirer l’attention des voyageurs potentiels, promouvoir les destinations et services touristique
+
+6. Conclusion
+L'analyse du marché de Zoto Madagascar révèle une forte demande pour une plateforme intégrée de services de transport, de location de voitures, et d'envoi de colis. L'abonnement aux articles, étant la principale source de revenus, nécessite une stratégie de tarification et de contenu premium bien définie pour attirer et retenir les clients. En combinant l'innovation technologique, une offre flexible, et une politique tarifaire compétitive, Zoto Madagascar est bien positionnée pour capturer une part significative du marché malgache.
+
+
+
+
+
+Chapitre 5 :   Conception et Réalisation
+Définition du projet
+Zoto est une plateforme numérique spécialisée dans la gestion des services de transport à Madagascar. Elle permet aux administrateurs de contrôler les paiements et les loyers des articles publiés par les compagnies routières. De leur côté, les compagnies peuvent gérer en temps réel les réservations effectuées par les clients. Accessible aussi bien sur les navigateurs web que via une application mobile, Elle centralise les opérations commerciales des entreprises de transport, offrant une solution complète pour la gestion des services et des transactions.
+1-	Planning du projet (diagramme de GANTT)
+	Définition
+Le diagramme de GANTT est une représentation visuelle du calendrier d’un projet, montrant les dates de début et de fin de chaque tache, ainsi que leur durée et leurs repentances, il comprend généralement un carte horizontale représentant le temps, avec chaque barre représentant une tache ou une phase du projet. La ligne verticale sur le carte indiquent la date de début et de fin du projet. Le diagramme de GANTT sont couramment utilisés dans le domaine de la gestion de projets pour aider les équipes à visualiser et gérer des projets complexes.
+2-	Diagramme de GANNT
+ 
+
+Figure 1:diagramme de GANTT du projet
+ 
+Chapitre 6 : Conception du Système d’Information
+1. Analyse de l’Existant
+L'analyse de l'existant constitue une étape cruciale pour évaluer les forces et faiblesses des systèmes en place. Elle vise à recueillir des informations essentielles sur les processus actuels et les besoins des parties prenantes, afin d'identifier les domaines nécessitant des améliorations et de guider la planification de solutions adaptées.
+a) Étude des Moyens Matériels
+Pour la réalisation du projet, les entreprises doivent disposer d'une infrastructure matérielle adéquate. Celle-ci comprend :
+•	Ordinateurs : Pour le développement et la gestion des opérations.
+•	Smartphones : Pour l'accès et la gestion mobile.
+•	Connexion Internet : Une connexion rapide et fiable est indispensable pour assurer la connectivité et la performance des services en ligne.
+•	Serveurs : Des serveurs robustes et sécurisés sont nécessaires pour héberger les données et les applications du système.
+b) Étude des Moyens Humains
+Les ressources humaines impliquées dans le projet incluent :
+•	Gestionnaires : Responsables de la prise de décisions stratégiques et de la supervision globale.
+•	Techniciens : Spécialisés dans la maintenance et le support technique du système.
+•	Utilisateurs Finaux : Ils utilisent le système pour accomplir leurs tâches quotidiennes et répondre à leurs besoins opérationnels spécifiques.
+2. Choix Méthodologique
+a) Modélisation Conceptuelle de Données (MCD)
+Le Modèle Conceptuel de Données (MCD) est une représentation des données et de leurs relations au sein du système d’information, indépendamment des aspects techniques de stockage. Il permet de définir clairement les entités et les associations pertinentes.
+Objectif du MCD : Fournir une représentation précise des exigences métier en mettant en avant les entités et leurs relations. Ce modèle sert de base pour le développement de modèles plus détaillés et la création de bases de données physiques.
+Entités : Les entités représentent des objets ou concepts du monde réel dans le système d'information. Chaque entité est caractérisée par des attributs décrivant ses propriétés.
+Exemple d'Entité :
+•	Réservation
+o	_Id Réservée
+o	_Catégorie
+o	_Voyage
+o	_Lieu
+Schéma d’une Entité : 
+Associations et Cardinalités : Les associations décrivent les relations entre les entités. La cardinalité définit combien d’occurrences d’une entité peuvent être associées à une ou plusieurs occurrences d’une autre entité.
+•	Borne minimale : Nombre minimum d'occurrences (0 ou 1).
+•	Borne maximale : Nombre maximum d'occurrences (1 ou n).
+Identifiant : Attribut unique permettant d'identifier une occurrence d’entité parmi toutes les occurrences possibles.
+Occurrences d’une Entité : Cas spécifiques représentant des instances uniques d’une entité.
+b) Modèle Logique de Données (MLD)
+Le Modèle Logique de Données (MLD) décrit la structure et les relations des données en se concentrant sur la logique des données, indépendamment des détails techniques de leur stockage.
+Principe du MLD : Représenter les données en termes de tables, attributs, et relations, avec une organisation normalisée. Le MLD se concentre sur la manière dont les entités sont liées.
+Exemple de MLD :
+•	Client : (idClient, nom, adresse)
+•	Expédition : (id, date, détails)
+•	Facture : (id, montant, date)
+•	Gestion de Factures : (idFacture, idClient)
+c) Modèle Physique des Données (MPD)
+Le Modèle Physique des Données (MPD) définit les détails techniques de stockage des données dans un système de gestion de base de données. Il traduit le MLD en une structure physique spécifique adaptée aux contraintes et capacités des systèmes de stockage.
+Principe du MPD : Décrire les spécifications techniques pour le stockage et la gestion des données, telles que les tables, les indices, les contraintes, et les types de données.
+Exemple de MPD :
+•	Table Utilisateur : id (int, PK), nom (varchar), email (varchar)
+•	Table Réservation : id (int, PK), utilisateur_id (int, FK), date (datetime)
+3. Schéma des Entités pour le Projet
+Pour le projet "Zoto Madagascar", les principales entités sont :
+•	Utilisateur : (id, nom, email, rôle_id)
+•	Article : (id, titre, description, type _id)
+•	Type Article : (id, nom)
+•	Note pour Article : (id, article_id, note)
+•	Réservation : (id, article_id, utilisateur_id, date)
+•	Commande : (id, article_id, utilisateur_id, quantite)
+•	Journalisation : (id, utilisateur_id, action, date)
+Schéma des Entités : 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	Chapitre 7 : Choix technologique
+Dans ce chapitre, nous abordons les choix technologiques qui ont été déterminants pour la réalisation du projet. Ces choix ont été faits en tenant compte des besoins spécifiques du projet, des compétences techniques de l’équipe de développement, ainsi que des contraintes liées au temps et aux ressources disponibles.
+1. Langages de programmation
+Le choix des langages de programmation est crucial pour le développement de tout projet logiciel, car il influence non seulement la performance et la sécurité, mais aussi la rapidité de développement et la maintenabilité du code.
+Critères de choix du langage
+•	Environnement technique : Il est essentiel de choisir un langage qui offre un niveau élevé de sécurité et qui est compatible avec l'environnement de déploiement. Par exemple, PHP a été choisi pour le backend en raison de sa robustesse et de sa large adoption dans le développement web.
+•	Performance : Les performances du langage, notamment en termes de gestion des ressources matérielles telles que la mémoire (RAM) et le processeur, sont cruciales. Par exemple, JavaScript est utilisé côté front-end pour sa rapidité d'exécution dans le navigateur, tandis que PHP est optimisé pour le traitement côté serveur.
+•	Vitesse de développement : La rapidité de développement est un critère primordial, surtout dans des projets où les délais sont serrés. Laravel, un framework PHP, a été choisi pour sa capacité à accélérer le développement grâce à sa structure claire et ses outils intégrés.
+2. Technologies utilisées pour le front-end
+Le front-end de l'application web et mobile a été développé en utilisant des technologies modernes qui assurent une expérience utilisateur fluide et interactive.
+Partie Front-end Web
+•	Blade (Laravel Blade Template Engine) est le moteur de template de Laravel, utilisé pour créer des vues dynamiques dans les applications web. Il permet d'incorporer facilement du code PHP dans les fichiers de vue, en utilisant une syntaxe simple et lisible. Blade facilite également la création de layouts réutilisables et la gestion des composants, ce qui aide à maintenir une structure de code propre et modulable.
+ 
+
+•	Preline UI  est une bibliothèque de composants CSS, conçue pour être utilisée avec Tailwind CSS. Ce qui la rend particulièrement intéressante, c'est sa capacité à être intégrée dans des projets Laravel utilisant Blade, le moteur de templates de Laravel. Blade génère des pages web en utilisant une structure HTML, et Preline UI, étant compatible avec HTML, s'intègre parfaitement dans ce cadre. En associant Preline UI avec Blade, on peut rapidement créer des interfaces utilisateur modernes et esthétiques, tout en bénéficiant de la souplesse et de la puissance de Blade pour gérer les templates, les layouts et les composants dynamiques. Cela simplifie le processus de développement et améliore la cohérence visuelle du projet.
+ 
+Partie Front-end Mobile
+•	React Native : Le développement de l'application mobile a été réalisé avec React Native, une bibliothèque JavaScript permettant de créer des applications natives pour iOS et Android. React Native a été choisi pour sa capacité à réutiliser le code entre les plateformes, ce qui réduit les coûts de développement et de maintenance.
+3. Technologies utilisées pour le back-end
+Le back-end de l'application a été conçu pour gérer la logique métier, le traitement des données, et la communication avec la base de données.
+•	PHP avec Laravel : Laravel, un framework PHP, a été choisi pour le développement du backend de l'application web et du tableau de bord administratif. Laravel offre une architecture MVC (Model-View-Controller) qui facilite la gestion du code, ainsi qu'une multitude de fonctionnalités intégrées, telles que l'authentification, la gestion des sessions, et les migrations de base de données.
+•	API REST : Pour l'application mobile, une API REST a été mise en place avec Laravel pour gérer les interactions entre le front-end mobile (React Native) et le back-end. Cette API permet une communication fluide et sécurisée, assurant ainsi que les données soient échangées de manière efficace et fiable.
+4. Gestion des bases de données
+La gestion des données est une composante essentielle du projet, et le choix du système de gestion de base de données (SGBD) a été fait en fonction des besoins en termes de performance, de sécurité et de scalabilité.
+•	MySQL sur serveur Laragon : MySQL a été choisi comme SGBD en raison de sa performance élevée et de sa capacité à gérer de grandes quantités de données de manière efficace. Le serveur Laragon a été utilisé pour l'hébergement local durant le développement, offrant un environnement de développement complet et performant.
+5. Outils de développement
+Les outils utilisés durant le développement ont été sélectionnés pour améliorer la productivité, assurer la qualité du code, et faciliter la collaboration entre les membres de l'équipe.
+•	Visual Studio Code (VS Code) : VS Code a été l'éditeur de code principal utilisé pour le développement du projet. Ce choix s'explique par l'interface intuitive de VS Code, sa grande flexibilité grâce aux extensions, et ses puissants outils de débogage.
+•	HeidiSQL : Pour la gestion des bases de données, HeidiSQL a été utilisé. Cet outil offre une interface utilisateur conviviale, permettant de gérer les bases de données MySQL de manière simple et efficace, avec des fonctionnalités d'import/export de données et de gestion avancée des tables et des procédures stockées.
+•	Apache : Pour tester et déployer l'application localement, Apache a été utilisé comme serveur web. Sa nature open-source et sa capacité à fonctionner sur diverses plateformes en font un choix fiable pour le développement et les tests avant la mise en production.
+Chapitre 8 : PROTOTYPAGE
+1- Mise en Production de la Plateforme Zoto Madagascar
+Hébergement Web : L'hébergement web est une composante essentielle pour rendre une plateforme en ligne accessible sur Internet. Il s'agit d'un service qui fournit l'espace nécessaire sur des serveurs connectés en permanence pour stocker les fichiers, les données et le contenu de votre site web. Les serveurs d'hébergement assurent également la disponibilité et la performance du site pour les visiteurs.
+Types d’Hébergement :
+•	Hébergement Partagé : Ce type d'hébergement implique que plusieurs sites web partagent le même serveur physique et ses ressources (CPU, RAM, bande passante). Il est souvent économique, mais peut entraîner des limitations en termes de performance et de sécurité, en fonction du trafic des autres sites sur le même serveur.
+•	Hébergement Dédié : Avec l'hébergement dédié, un serveur entier est réservé exclusivement pour un seul site ou client. Cela offre une plus grande flexibilité et performance, ainsi qu'une personnalisation accrue des configurations serveur. Cependant, il est généralement plus coûteux et requiert une gestion technique plus approfondie.
+•	Hébergement VPS (Virtual Private Server) : Le VPS utilise une technologie de virtualisation pour créer plusieurs serveurs virtuels sur un seul serveur physique. Chaque VPS a des ressources dédiées et un contrôle administratif complet, offrant un compromis entre l'hébergement partagé et dédié, avec une meilleure performance et flexibilité que le premier, tout en étant plus abordable que le second.
+Choix de l'Hébergement pour Zoto Madagascar : Pour la plateforme Zoto Madagascar, nous avons sélectionné Tranonkala pour ses caractéristiques exceptionnelles :
+•	Sécurité Renforcée : Tranonkala fournit des certificats SSL qui assurent un transfert de données sécurisé entre le serveur et les utilisateurs. Cela est crucial pour protéger les informations sensibles et renforcer la confiance des utilisateurs.
+•	Performance Accrue : L'utilisation de stockage NVMe (Non-Volatile Memory Express) permet des vitesses de lecture et d'écriture bien supérieures aux disques durs SATA classiques. Cela se traduit par une meilleure réactivité et des temps de chargement réduits pour le site.
+•	Outils de Gestion Avancés : Avec des outils comme CPanel pour la gestion des fichiers et des bases de données, ainsi que Hala Builder pour la création et la personnalisation de pages, la plateforme bénéficie d'une gestion simplifiée et efficace.
+Nom de Domaine : Un nom de domaine est une adresse web qui permet aux utilisateurs de trouver facilement un site sur Internet, sans avoir à mémoriser des adresses IP numériques. Il est composé du nom proprement dit et d'une extension de domaine (par exemple, zotomadagascar.mg).
+Extensions de Domaine :
+•	.com : Généralement utilisé pour des sites commerciaux.
+•	.org : Souvent réservé aux organisations à but non lucratif.
+•	.mg : Spécifique à Madagascar, idéal pour les entreprises locales et les initiatives qui souhaitent renforcer leur présence régionale.
+Pour Zoto Madagascar, le choix du domaine .mg est stratégique :
+•	Ancrage Local : En utilisant l'extension .mg, nous signalons clairement notre orientation vers le marché malgache, ce qui peut renforcer la confiance et la reconnaissance auprès des utilisateurs locaux.
+•	Pertinence Régionale : Le domaine .mg aide à se démarquer comme un acteur clé dans le secteur du transport à Madagascar, tout en facilitant l'identification du site pour les visiteurs.
+Serveur d'Hébergement : Les serveurs d'hébergement sont des ordinateurs puissants configurés pour stocker et servir des données web. Ils peuvent offrir différents types de services :
+•	Serveur VPS : Offre une configuration personnalisable avec des ressources dédiées, idéal pour des besoins spécifiques de performance et de sécurité.
+•	Serveur Desktop : Bien que moins courant pour l'hébergement web, il peut se référer à des services liés aux ordinateurs de bureau, nécessitant une clarification plus précise auprès du fournisseur.
+•	Marketing Digital : Inclut des stratégies telles que le SEO, le marketing par e-mail, et les campagnes publicitaires en ligne, pour promouvoir le site et attirer les visiteurs.
+Choix du Serveur pour Zoto Madagascar : Nous avons opté pour un serveur VPS pour plusieurs raisons :
+•	Flexibilité de Configuration : Permet d'ajuster les ressources serveur selon les besoins de la plateforme, offrant ainsi une meilleure gestion des pics de trafic et des demandes utilisateurs.
+•	Portabilité : Les sites web sont accessibles depuis n'importe quel appareil connecté à Internet, facilitant l'accès et l'engagement des utilisateurs.
+•	Évolutivité : Les serveurs VPS permettent une évolutivité facile, permettant d'adapter les capacités du serveur à la croissance du site sans nécessiter une refonte majeure.
+Plan d’Abonnement : Tranonkala propose divers plans d'abonnement adaptés aux besoins différents des clients. Pour Zoto Madagascar, nous avons choisi le plan Business Hosting pour ses fonctionnalités étendues :
+•	Prix : 15 000 Ar par mois, payable annuellement à 180 000 Ar.
+•	Fonctionnalités Incluses :
+o	Gestion : CPanel pour la gestion facile des ressources et des paramètres.
+o	Stockage NVMe : Illimité pour des performances optimales.
+o	Bande Passante : Illimitée, assurant une navigation fluide pour tous les utilisateurs.
+o	Bases de Données : Illimitées, permettant de gérer une grande quantité d'informations.
+o	Certificats SSL : Inclus pour la sécurité des transactions et des données.
+o	Support : Outils de gestion avancés et support technique pour garantir un fonctionnement optimal du site.
+
+
+	
+ 
+
+
+
+
+{{-- <p class="text-xl tracking-tight font-extrabold text-black sm:text-5xl md:text-4xl text-end pr-3" >Connection</p> --}}
+        {{-- <p class="text-2xl mb-5 leading-none text-black font-semibold max-w-lg">Votre solution de confiance pour un transport fluide et sécurisé à travers Madagascar, où votre confort et votre satisfaction sont notre priorité</p> --}}
+        {{-- <div class="max-w-md w-full sm:p-5 md:p-0">
+          <form action={{route("verification")}} method="POST" class="mt-3">
+            @csrf
+            <div class="mb-6">
+              <label class="block mb-2 text-black font-semibold" for="username">Numéro mobile</label>
+              <input 
+              name="telephone"
+              class="w-full p-3 text-black rounded border-black focus:outline-none focus:bg-gray-100 focus:border-gray-500" type="text" name="username" name="telephone">
+              @error("telephone")
+              <p class="text-xs text-red-600 mt-1" id="email-error">{{$message}}</p>
+              @enderror
+            </div>
+            <div class="mb-6">
+              <label class="block mb-2 text-black font-semibold" for="password">Mot de passe</label>
+              <input class="w-full p-3 text-black rounded border-black focus:outline-none focus:bg-gray-100 focus:border-gray-500" type="password" name="password">
+              @error("password")
+              <p class="text-xs text-red-600 mt-1" id="email-error">{{$message}}</p>
+              @enderror
+            </div>
+            <div>          
+              <button class="w-full bg-gray-800 hover:bg-slate-700 text-white font-bold p-4 rounded" type="submit">Se connecter</button>
+            </div>       
+          </form> 
+        </div> --}}
+        {{-- <div class="relative w-40 h-40 bg-gray-900 rounded-full" style="clip-path: polygon(50% 0%, 85% 25%, 100% 75%, 50% 100%, 15% 75%, 0% 25%);">
+          <div class="absolute inset-0 flex items-center justify-center">
+              <p class="text-center text-white">Texte à l'intérieur de la forme</p>
+          </div>
+        </div> --}}
+        {{-- <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#FF0066" d="M43.1,-26.9C55.3,-3.8,64.1,19.2,56.4,33.9C48.7,48.6,24.3,55.1,0,55.1C-24.4,55.1,-48.7,48.6,-59.3,32.2C-70,15.8,-66.9,-10.5,-54.7,-33.5C-42.5,-56.6,-21.3,-76.4,-2.9,-74.7C15.5,-73.1,30.9,-49.9,43.1,-26.9Z" transform="translate(100 100)" />
+          <text x="100" y="105" font-size="20" text-anchor="middle" fill="white" font-family="Arial">Ton Texte Ici</text>
+        </svg>
+        <div class="bg-slate-900 h-40 w-40 flex items-center justify-center">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+              <path fill="#FF0066" d="M43.1,-26.9C55.3,-3.8,64.1,19.2,56.4,33.9C48.7,48.6,24.3,55.1,0,55.1C-24.4,55.1,-48.7,48.6,-59.3,32.2C-70,15.8,-66.9,-10.5,-54.7,-33.5C-42.5,-56.6,-21.3,-76.4,-2.9,-74.7C15.5,-73.1,30.9,-49.9,43.1,-26.9Z" transform="translate(100 100)" />
+              <text x="100" y="100" font-size="10" text-anchor="middle" fill="white">Ton texte ici</text>
+          </svg>
+      </div> --}}
+
+
+
+      {{-- <h1>Résultats de recherche pour "{{ $query }}"</h1> --}}
+
+    
+    <!-- Slider -->
+    {{-- <div data-hs-carousel='{
+      "loadingClasses": "opacity-0",
+      "isAutoPlay": true
+    }' class="relative">
+    <div class="hs-carousel relative overflow-hidden w-full min-h-32 rounded-lg">
+      <div class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full p-3 dark:bg-neutral-900">
+            <span class="self-center text-4xl font-bold text-gray-800 transition duration-700 dark:text-white">Voyage</span>
+          </div>
+        </div>
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full p-3 dark:bg-neutral-800">
+            <span class="self-center text-4xl font-bold text-gray-800 transition duration-700 dark:text-white">Location Voiture</span>
+          </div>
+        </div>
+        <div class="hs-carousel-slide">
+          <div class="flex justify-center h-full  p-3 dark:bg-neutral-700">
+            <span class="self-center text-4xl font-bold text-gray-800 transition duration-700 dark:text-white">Transport Colis</span>
+          </div>
+        </div>
+      </div>
+    </div> --}}
+
+{{-- <button type="button" class="hs-carousel-prev hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 start-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-s-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+  <span class="text-2xl" aria-hidden="true">
+    <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m15 18-6-6 6-6"></path>
+    </svg>
+  </span>
+  <span class="sr-only">Previous</span>
+</button>
+<button type="button" class="hs-carousel-next hs-carousel:disabled:opacity-50 disabled:pointer-events-none absolute inset-y-0 end-0 inline-flex justify-center items-center w-[46px] h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none focus:bg-gray-800/10 rounded-e-lg dark:text-white dark:hover:bg-white/10 dark:focus:bg-white/10">
+  <span class="sr-only">Next</span>
+  <span class="text-2xl" aria-hidden="true">
+    <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m9 18 6-6-6-6"></path>
+    </svg>
+  </span>
+</button> --}}
+
+{{-- <div class="hs-carousel-pagination flex justify-center absolute bottom-3 start-0 end-0 space-x-2">
+  <span class="hs-carousel-active:bg-slate-950 hs-carousel-active:border-slate-950 size-2 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"></span>
+  <span class="hs-carousel-active:bg-slate-950 hs-carousel-active:border-slate-950 size-2 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"></span>
+  <span class="hs-carousel-active:bg-slate-950 hs-carousel-active:border-slate-950 size-2 border border-gray-400 rounded-full cursor-pointer dark:border-neutral-600 dark:hs-carousel-active:bg-blue-500 dark:hs-carousel-active:border-blue-500"></span>
+</div>
+</div> --}}
+<!-- End Slider -->
+    {{-- <p class="text-5xl tracking-tight font-extrabold text-black sm:text-5xl md:text-6xl mt-32">Zoto Plateforme</p>
+    <p class="leading-relaxed text-justify max-w-lg text-xl">
+      propose des promotions pour les compagnies qui souhaitent de publier ses articles, que ce soit du type  Voyage , Location Voiture ou Service Colis
+    </p>
+    
+    <div class="sm:flex lg:justify-start">
+      <div class="mt-5 sm:mt-3" id="auth">
+        <a href={{ route("descript") }} class="w-full flex items-center justify-center px-8 py-2 border border-transparent text-base font-medium rounded-md text-blue-950 bg-slate-100 hover:bg-slate-200 md:py-2 md:text-sm md:px-10 shadow">
+          S'interesser
+        </a>
+      </div>
+    </div> --}}

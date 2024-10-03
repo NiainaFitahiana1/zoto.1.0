@@ -1,0 +1,10 @@
+/vendor
+/node_modules
+/.env
+/storage/*.key
+/public/storage
+/composer.lock
+/npm-debug.log
+/yarn-error.log
+/homestead.json
+/Homestead.yaml

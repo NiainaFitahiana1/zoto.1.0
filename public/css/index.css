@@ -1,0 +1,33 @@
+.bg-in {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('../logos/camping.jpg');
+    background-size: cover; /* Couvre toute la page */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Ne répète pas l'image */
+    background-attachment: fixed; /* Fixe l'image même lors du défilement */
+    position: relative;
+    overflow: hidden; /* Empêche le débordement du contenu */
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit; /* Utilise la même image que .bg-in */
+    background-size: inherit;
+    background-position: inherit;
+    background-repeat: inherit;
+    background-attachment: inherit;
+    filter: blur(20px) brightness(0.7); /* Applique le flou et l'assombrissement */
+    z-index: -1; /* Place l'effet derrière le contenu */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Place le contenu au-dessus de l'arrière-plan */
+    color: white; /* Couleur du texte, ajustable selon vos besoins */
+}
